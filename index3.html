@@ -1,0 +1,263 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+        <style>
+    .data-table {
+        border-collapse: collapse;
+    }
+    .border {
+        border-bottom: 1px solid #000;
+        border-right: 1px solid #000;
+        border-left: 1px solid #000;
+        border-top: 1px solid #000;
+    }
+   
+    input[type=number]{
+    width: 80px;
+} 
+         
+     h1 {font-family: garamond; color: lightblue; font-size:2.5em;
+            
+        }
+     .container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: black;
+    opacity:.8;
+    color:white;
+}
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+html { 
+  background: url(http://veganstrategist.org/wp-content/uploads/2018/02/money-heart.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+           
+        </style>
+    </head>
+
+    <body>
+    	
+
+  	<nav class= "navbar navbar-expand-sm navbar-light bg-dark">
+  		<h1>DC Finance</h1>
+  		<ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link active" href="index.html">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="index3.html">Stocks</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Events</a>
+  </li>
+  <li class="nav-item">
+     <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Contact Us</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Phone</a>
+      <a class="dropdown-item" href="#">Email</a>
+      <a class="dropdown-item" href="#">Facebook</a>
+      <a class="dropdown-item" href="#">Twitter</a>
+      </li>
+</ul>
+  		</nav>
+  
+  <div class="centered"> 
+      <p>    <center>
+<table class="data-table">
+    <tr>
+        <th class="border">Symbol</th>
+        <th class="border">Last Price</th>
+        <th class="border">Change</th>
+        <th class="border">% CHG</th>
+        <th class="border">Currency</th>
+        <th class="border">Market Time</th>
+        <th class="border">Volume</th>
+        <th class="border">Shares</th>
+        <th class="border">Avg Vol</th>
+        <th class="border">Market Cap</th>
+        <th class="border">Buy/Sell</th>
+    </tr>
+    <tr>
+        <td class="border">FB</td>
+        <td class="border">185.69</td>
+        <td class="border"><font color="green">+7.91</font></td>
+        <td class="border"><font color="green">+4.45%</font></td>
+        <td class="border">USD</td>
+        <td class="border">4:00PM EDT</td>
+        <td class="border">49.61M</td>
+        <td class="border"><input type="number"></td>
+        <td class="border">22.65</td>
+        <td class="border">537.50B</td>
+        <td class="border"><button>Buy/Sell</button></td>
+    </tr>
+    <tr>
+        <td class="border">^DJI</td>
+        <td class="border">25,502.18</td>
+        <td class="border"><font color="green">+39.60</font></td>
+        <td class="border"><font color="green">+0.16</font></td>
+        <td class="border">USD</td>
+        <td class="border">4:59PM EDT</td>
+        <td class="border">238.99M</td>
+        <td class="border"><input type="number"></td>
+        <td class="border">309.14M</td>
+        <td class="border"></td>
+        <td class="border"><button>Buy/Sell</button></td>
+    </tr>
+    <tr>
+        <td class="border">AFL</td>
+        <td class="border">46.64</td>
+        <td class="border"><font color="green">+0.05</font></td>
+        <td class="border"><font color="green">+0.11%</font></td>
+        <td class="border">USD</td>
+        <td class="border">4:00PM EDT</td>
+        <td class="border">2.05M</td>
+        <td class="border"><input type="number"></td>
+        <td class="border">3.18M</td>
+        <td class="border">36.11B</td>
+        <td class="border"><button>Buy/Sell</button></td>
+    </tr>
+    <tr>
+        <td class="border">^GSPC</td>
+        <td class="border">2,850.40</td>
+        <td class="border"><font color="green">+10.05</font></td>
+        <td class="border"><font color="green">+0.35%</font></td>
+        <td class="border">USD</td>
+        <td class="border">4:59PM EDT</td>
+        <td class="border">1.76B</td>
+        <td class="border"><input type="number"></td>
+        <td class="border">3.38B</td>
+        <td class="border"></td>
+        <td class="border"><button>Buy/Sell</button></td>
+    </tr>
+    <tr>
+        <td class="border">MDO.BE</td>
+        <td class="border">135.15</td>
+        <td class="border"><font color="green">+1.21</font></td>
+        <td class="border"><font color="green">+0.90%</font></td>
+        <td class="border">EUR</td>
+        <td class="border">8:08AM CEST</td>
+        <td class="border">50</td>
+        <td class="border"><input type="number"></td>
+        <td class="border">7</td>
+        <td class="border"></td>
+        <td class="border"><button>Buy/Sell</button></td>
+    </tr>
+    <tr>
+        <td class="border">PLNT</td>
+        <td class="border">48.51</td>
+        <td class="border"><font color="green">+0.74</font></td>
+        <td class="border"><font color="green">+1.55%</font></td>
+        <td class="border">USD</td>
+		<td class="border">4:02PM EDT</td>
+        <td class="border">1.11M</td>
+        <td class="border"><input type="number"></td>
+        <td class="border">1.04M</td>
+        <td class="border">4.77B</td>
+        <td class="border"><button>Buy/Sell</button></td>
+    </tr>
+    <tr>
+        <td class="border">GC=F</td>
+        <td class="border">1215.60</td>
+        <td class="border"><font color="red">-7.60</font></td>
+        <td class="border"><font color="red">-0.62%</font></td>
+        <td class="border">USD</td>
+        <td class="border">4:48PM EDT</td>
+        <td class="border">188.50k</td>
+        <td class="border"><input type="number"></td>
+        <td class="border">123.21M</td>
+        <td class="border"></td>
+        <td class="border"><button>Buy/Sell</button></td>
+    </tr>
+    <tr>
+        <td class="border">SMSN.IL</td>
+        <td class="border">1027.00</td>
+        <td class="border">0.00</td>
+        <td class="border">0.00%</td>
+        <td class="border">USD</td>
+        <td class="border">3:40PM BST</td>
+        <td class="border">13.59k</td>
+        <td class="border"><input type="number"></td>
+        <td class="border">41.12K</td>
+        <td class="border"></td>
+        <td class="border"><button>Buy/Sell</button></td>
+    </tr>
+    <tr>
+        <td class="border">AAPL</td>
+        <td class="border">209.07</td>
+        <td class="border"><font color="green">+1.08</font></td>
+        <td class="border"><font color="green">+0.52%</font></td>
+        <td class="border">USD</td>
+        <td class="border">4:00PM EDT</td>
+        <td class="border">25.40M</td>
+        <td class="border"><input type="number"></td>
+        <td class="border">23.68M</td>
+        <td class="border">1.01T</td>
+        <td class="border"><button>Buy/Sell</button></td>
+    </tr>
+    <tr>
+        <td class="border">MSFT</td>
+        <td class="border">108.13</td>
+        <td class="border"><font color="green">+0.09</font></td>
+        <td class="border"><font color="green">+0.08%</font></td>
+        <td class="border">USD</td>
+        <td class="border">4:00PM EDT</td>
+        <td class="border">20.25M</td>
+        <td class="border"><input type="number"></td>
+        <td class="border">25.89M</td>
+        <td class="border">830.78B</td>
+        <td class="border"><button>Buy/Sell</button></td>
+    </tr>
+    <tr>
+        <td class="border">AMZN</td>
+        <td class="border">1847.75</td>
+        <td class="border"><font color="green">+24.46</font></td>
+        <td class="border"><font color="green">+1.34%</font></td>
+        <td class="border">USD</td>
+        <td class="border">4:00PM EDT</td>
+        <td class="border">3.39M</td>
+        <td class="border"><input type="number"></td>
+        <td class="border">3.97M</td>
+        <td class="border">896.58B</td>
+        <td class="border"><button>Buy/Sell</button></td>
+    </tr>
+    <tr>
+        <td class="border">SPOT</td>
+        <td class="border">179.95</td>
+        <td class="border"><font color="green">+4.45</font></td>
+        <td class="border"><font color="green">+2.54%</font></td>
+        <td class="border">USD</td>
+        <td class="border">4:00PM EDT</td>
+        <td class="border">1.03M</td>
+        <td class="border"><input type="number"></td>
+        <td class="border">3.12M</td>
+        <td class="border">32.06B</td>
+        <td class="border"><button>Buy/Sell</button></td>
+    </tr>
+</table></p>
+  </div>
+</div>
+
+    </body>
+</html>
